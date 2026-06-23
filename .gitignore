@@ -1,0 +1,22 @@
+# Virtual environment
+.venv/
+
+# Dataset (too large for GitHub)
+real_and_fake_face_detection/
+real_and_fake_face/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Training logs (local only)
+Code/train_output.txt
+Code/train_output.log
+
+# Test data pickle (generated locally by train.py)
+Code/test_data.pkl
+
+# OS files
+.DS_Store
+Thumbs.db
