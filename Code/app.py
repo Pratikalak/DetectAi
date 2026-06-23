@@ -22,12 +22,10 @@ def preprocess_image(image):
 def predict_image(image):
     processed_image = preprocess_image(image)
     prediction = model.predict(processed_image, verbose=0)
-    
-    # Get class label and confidence
-    class_label = np.argmax(prediction, axis=1)[0]
-    confidence = np.max(prediction) * 100  # Convert to percentage
-    
-    result = "Real" if class_label == 0 else "Fake"
+
+    fake_prob = prediction[0][1]
+    result = "Fake" if fake_prob >= 0.35 else "Real"
+    confidence = fake_prob * 100 if result == "Fake" else (1 - fake_prob) * 100
     return result, confidence
 
 # Streamlit application
