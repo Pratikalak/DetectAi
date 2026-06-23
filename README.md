@@ -1,3 +1,15 @@
+---
+title: DetectAi
+emoji: 🔍
+colorFrom: blue
+colorTo: red
+sdk: streamlit
+sdk_version: 1.58.0
+app_file: Code/app.py
+pinned: false
+python_version: "3.12"
+---
+
 # DeepFake-Detection-and-Prevention-A-Comprehensive-approach-using-AI
 ## Table of Contents
 * [Introduction](https://github.com/Ramya-Mahi/DeepFake-Detection-and-Prevention-A-Comprehensive-approach-using-AI?tab=readme-ov-file#introduction)
