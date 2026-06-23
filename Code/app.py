@@ -27,7 +27,7 @@ def predict_image(image):
     class_label = np.argmax(prediction, axis=1)[0]
     confidence = np.max(prediction) * 100  # Convert to percentage
     
-    result = "Fake" if class_label == 0 else "Real"
+    result = "Real" if class_label == 0 else "Fake"
     return result, confidence
 
 # Streamlit application
